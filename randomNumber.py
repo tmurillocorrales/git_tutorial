@@ -7,6 +7,7 @@
 import random
 import time
 import sys
+import matplotlib.pyplot as plt
 
 def get_random_number(start, end):
     num = random.randint(start, end)
@@ -21,15 +22,15 @@ def write_log_file(outputfilename, data):
 
 if __name__ == "__main__":
     
-    rolls=[]
+    roll_list=[]
     for i in range(6):
         roll = get_random_number(1, 6)
-        rolls.append(roll)
-    print(rolls)
+        roll_list.append(roll)
+    print(roll_list)
     sys.stdout.flush()
     
     outputfilename = "randomNumber"
     #roll = get_random_number(1, 100)
     write_log_file(outputfilename, roll)
-    plt.bar(range(6),rolls)
+    plt.bar(range(6),roll_list)
     plt.show()
