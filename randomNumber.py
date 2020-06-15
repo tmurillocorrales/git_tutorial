@@ -20,7 +20,15 @@ def write_log_file(outputfilename, data):
 
 
 if __name__ == "__main__":
+    
+    rolls=[]
+    for i in range(6):
+        roll = get_random_number(1, 6)
+        rolls.append(roll)
+    print(rolls)
+    sys.stdout.flush()
+    
     outputfilename = "randomNumber"
-    roll = get_random_number(1, 100)
+    #roll = get_random_number(1, 100)
     write_log_file(outputfilename, roll)
 
