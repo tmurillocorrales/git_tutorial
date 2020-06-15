@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # team: Daniel, Elsa
+# expert of exercise block 1: Daniel V
 
 import random
 import time
