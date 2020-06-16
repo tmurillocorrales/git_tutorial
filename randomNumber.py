@@ -8,6 +8,7 @@ import random
 import time
 import sys
 import matplotlib.pyplot as plt
+import unimportant_package
 
 def get_random_number(start, end):
     num = random.randint(start, end)
@@ -19,6 +20,8 @@ def write_log_file(outputfilename, data):
     f.write("Your randomly generated number is " + str(data) + " (" + time.strftime("%H:%M:%S") + ")\n")
     f.close()
 
+def cherry_pick_perfect():
+    pass
 
 if __name__ == "__main__":
     
@@ -34,3 +37,6 @@ if __name__ == "__main__":
     write_log_file(outputfilename, roll)
     plt.barh(range(6),rolls)
     plt.show()
+	
+def why_would_i_need_this():
+    pass
