@@ -33,3 +33,4 @@ if __name__ == "__main__":
     #roll = get_random_number(1, 100)
     write_log_file(outputfilename, roll)
 
+#### Greeetings! :-D
